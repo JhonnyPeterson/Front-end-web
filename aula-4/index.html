@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sócio Torcedor Corinthians</title>
+    </head>
+    <body>
+        <header>
+            <h1>Sócio Torcedor Corinthians</h1>
+            <img src="https://static.corinthians.com.br/uploads/16819155334a5cfa9281924139db466a8a19291aff.jpg" alt="Escudo do Corinthians" width="222" style="float: right; position: relative; top: -70px;">
+        </header>
+        <main>
+            <section>
+                <h2>Cadastre-se como sócio torcedor</h2>
+                <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                    <P>Preencha o formulário abaixo para se cadastrar como sócio torcedor</P>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <label for="foto_id">Foto</label>
+                            <input id="foto_id" name="foto" type="file" accept="image/*">
+                        </div>
+                        <div>
+                            <label for="nome_id">Nome completo</label>
+                            <input id="nome_id" name="nome" type="text" placeholder="Yuri Alberto" required>
+                        </div>
+                        <div>
+                            <label for="telfone_id">Telefone:</label>
+                            <input id="telefone_id" name="telefone" type="tel" placeholder="(11) 91234-5678" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                        </div>
+                        <div>
+                            <label for="email_id">Email:</label>
+                            <input id="email_id" name="email" type="email">
+                        </div>
+                        <div>
+                            <label for="data_nasc_id">Data de nascimento</label>
+                            <input id="data_nasc_id" name="data_nasc" type="date">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <div>
+                            <label for="logradouro_id">Logradouro</label>
+                            <input id="logradouro_id" name="logradouro" type="text">
+                        </div>
+                        <div>
+                            <label for="cidade_id">Cidade-UF</label>
+                            <input id="cidade_id" name="cidade" type="text">
+                        </div>
+                        <div>
+                            <label for="numero_id">Número</label>
+                            <input id="numero_id" name="numero" type="number">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sua história com o Corinthians</legend>
+                        <div>
+                            <label for="resumo_id">Conte como você virou corintiano</label>
+                            <textarea id="resumo_id"
+                                      name="resumo"
+                                      rows="10"
+                                      cols="190"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tipo de torcedor</legend>
+                        <div>
+                            <input id="torcedor_id"
+                                   name="nivel"
+                                   type="radio"
+                                   value="torcedor">
+                            <label for="torcedor_id">Torcedor</label>
+                        </div>
+                        <div>
+                            <input id="socio_id"
+                                   name="nivel"
+                                   type="radio"
+                                   value="socio">
+                            <label for="socio_id">Sócio Fiel Torcedor</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Onde acompanha o Corinthians</legend>
+                        <div>
+                            <input id="est_id"
+                                   name="acompanha"
+                                   type="checkbox"
+                                   value="estadio">
+                            <label for="est_id">Estádio (Neo Química Arena)</label>
+                        </div>
+                        <div>
+                            <input id="tv_id"
+                                   name="acompanha"
+                                   type="checkbox"
+                                   value="tv">
+                            <label for="tv_id">TV</label>
+                        </div>
+                        <div>
+                            <input id="app_id"
+                                   name="acompanha"
+                                   type="checkbox"
+                                   value="app">
+                            <label for="app_id">Aplicativo/Streaming</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Título mais marcante que viveu (2000-2026)</legend>
+                        <div>
+                            <label for="titulo_id">Título</label>
+                            <select id="titulo_id" name="titulo">
+                                <option value="mundial2000">Mundial de Clubes 2000</option>
+                                <option value="paulista2001">Campeonato Paulista 2001</option>
+                                <option value="copadobrasil2002">Copa do Brasil 2002</option>
+                                <option value="riosp2002">Torneio Rio-São Paulo 2002</option>
+                                <option value="paulista2003">Campeonato Paulista 2003</option>
+                                <option value="brasileirao2005">Campeonato Brasileiro 2005</option>
+                                <option value="serieb2008">Campeonato Brasileiro Série B 2008</option>
+                                <option value="copadobrasil2009">Copa do Brasil 2009</option>
+                                <option value="paulista2009">Campeonato Paulista 2009</option>
+                                <option value="brasileirao2011">Campeonato Brasileiro 2011</option>
+                                <option value="mundial2012">Mundial de Clubes 2012</option>
+                                <option value="libertadores2012">Copa Libertadores 2012</option>
+                                <option value="recopa2013">Recopa Sul-Americana 2013</option>
+                                <option value="paulista2013">Campeonato Paulista 2013</option>
+                                <option value="brasileirao2015">Campeonato Brasileiro 2015</option>
+                                <option value="brasileirao2017">Campeonato Brasileiro 2017</option>
+                                <option value="paulista2017">Campeonato Paulista 2017</option>
+                                <option value="paulista2018">Campeonato Paulista 2018</option>
+                                <option value="paulista2019">Campeonato Paulista 2019</option>
+                                <option value="copadobrasil2025">Copa do Brasil 2025</option>
+                                <option value="paulista2025">Campeonato Paulista 2025</option>
+                                <option value="supercopa2026">Supercopa do Brasil 2026</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="reset">Limpar dados</button>
+                        <button type="submit">Enviar cadastro</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <p><strong>VAI CORINTHIANS!!!</strong></p>
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>
